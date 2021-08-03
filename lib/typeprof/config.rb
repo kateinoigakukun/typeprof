@@ -45,6 +45,7 @@ module TypeProf
         union_width_limit: 10,
         stackprof: nil,
       }.merge(opt[:options])
+      opt[:lsp_options] ||= {}
       opt[:lsp_options] = {
         port: 0,
       }.merge(opt[:lsp_options])
